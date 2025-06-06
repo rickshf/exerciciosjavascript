@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercicio 4 - Mudar Cor</title>
+</head>
+<body>
+    <h2>Escolha uma cor para o fundo:</h2>
+    <select onchange="cor(this.value)">
+        <option value="">Selecione</option>
+        <option value="red">Vermelho</option>
+        <option value="blue">Azul</option>
+        <option value="green">Verde</option>
+        <option value="yellow">Amarelo</option>
+        <option value="white">Branco</option>
+        <option value="black">Preto</option>
+    </select>
+
+    <script>
+        function cor(cor) {
+            document.body.style.backgroundColor = cor;
+        }
+    </script>
+</body>
+</html>
