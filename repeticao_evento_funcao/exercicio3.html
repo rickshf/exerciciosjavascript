@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Exercício 3 - Tabuada</title>
-</head>
-<body>
+  </head>
+  <body>
     <h2>Tabuada</h2>
-    <input type="number" id="numero" placeholder="Digite um numero">
+    <input type="number" id="numero" placeholder="Digite um numero" />
     <button onclick="mostrarTabuada()">Mostrar Tabuada</button>
 
     <div id="resultado"></div>
 
     <script>
-        function mostrarTabuada() {
-            let n = parseInt(document.getElementById("numero").value);
-            let res = "";
-            for (let i = 0; i <= 10; i++) {
-                res += `${i} X ${n} = ${i * n}<br>`;
-            }
-            document.getElementById("resultado").innerHTML = res;
+      function mostrarTabuada() {
+        let n = parseInt(document.getElementById("numero").value);
+        let res = "";
+        for (let i = 0; i <= 10; i++) {
+          res += `${i} X ${n} = ${i * n}<br>`;
         }
+        document.getElementById("resultado").innerHTML = res;
+      }
     </script>
-</body>
+  </body>
 </html>
